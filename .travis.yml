@@ -11,7 +11,7 @@ matrix:
 
 before_script:
   - go get $VET_PACKAGE
-  - go get github.com/golang/lint/golint
+  - go get golang.org/x/lint/golint
 
 script: 
   - go test -v -race ./...
